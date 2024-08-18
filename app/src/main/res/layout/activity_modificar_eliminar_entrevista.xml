@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción" />
+
+    <EditText
+        android:id="@+id/editTextPeriodista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Periodista" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha (dd/MM/yyyy)"
+        android:inputType="date" />
+
+    <ImageView
+        android:id="@+id/imageViewEntrevistado"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Imagen del Entrevistado"
+        android:scaleType="centerCrop"
+        android:background="#cccccc" />
+
+    <Button
+        android:id="@+id/buttonModificarImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Modificar Imagen" />
+
+    <Button
+        android:id="@+id/buttonModificarAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Modificar Audio" />
+
+    <Button
+        android:id="@+id/buttonGuardarCambios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Guardar Cambios" />
+
+    <Button
+        android:id="@+id/buttonEliminarEntrevista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Eliminar Entrevista"
+        android:textColor="#FF0000" />
+
+</LinearLayout>

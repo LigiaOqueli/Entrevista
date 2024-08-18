@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción" />
+
+    <EditText
+        android:id="@+id/editTextPeriodista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Periodista" />
+
+    <EditText
+        android:id="@+id/editTextFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha (dd/MM/yyyy)"
+        android:inputType="date" />
+
+    <ImageView
+        android:id="@+id/imageViewEntrevistado"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Imagen del Entrevistado"
+        android:scaleType="centerCrop"
+        android:background="#cccccc" />
+
+    <Button
+        android:id="@+id/buttonAgregarImagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Agregar Imagen" />
+
+    <Button
+        android:id="@+id/buttonGrabarAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Grabar Audio" />
+
+    <Button
+        android:id="@+id/buttonGuardarEntrevista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Guardar Entrevista" />
+
+</LinearLayout>
