@@ -1,5 +1,6 @@
 package com.example.entrevista;
 
+import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.Button;
@@ -17,12 +18,13 @@ public class EscucharEntrevistaActivity extends AppCompatActivity {
     private MediaPlayer mediaPlayer;
     private Entrevista entrevista;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingresar_entrevista);
 
-        buttonPlayAudio = findViewById(R.id.buttonPlayAudio);
+        buttonPlayAudio = findViewById(R.id.buttonGrabarAudio);
         mediaPlayer = new MediaPlayer();
         entrevista = (Entrevista) getIntent().getSerializableExtra("Entrevista");
 
@@ -36,7 +38,7 @@ public class EscucharEntrevistaActivity extends AppCompatActivity {
                 if (audioBlob != null) {
                     byte[] audioInBytes = audioBlob.getBytes(1, (int) audioBlob.length());
                     mediaPlayer.reset();
-                    mediaPlayer.setDataSource(new ByteArrayInputStream(audioInBytes).readAllBytes());
+                    mediaPlayer.setDataSource(new ByteArrayInputStream(audioInBytes).equals());
                     mediaPlayer.prepare();
                     mediaPlayer.start();
                 } else {
